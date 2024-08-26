@@ -1,0 +1,43 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptado</title>
+        <link rel="stylesheet" href="../Encriptado/style.css">
+        
+    </head>
+    <body>
+        <header class="header">
+            <nav class="menu">
+                <a class="menu_link" href="./index.html">
+                    <img class="menu_link_logo" src="./assets/Logo.svg">
+                </a>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="izquierda">
+                <textarea id="ingreso_texto" class="texto" placeholder="Escribe a qui"></textarea>
+                <div class="elementos">
+                    <img id="figura" class="exclamacion" src="./assets/Vector.svg" alt="">
+                    <samp><p class="escribir">Solo letras minúsculas y sin acentos</p></samp>
+
+                    <div class="botones">
+                        <button id="boton_i" class="i">Encriptar</button>
+                        <button id="boton_d" class="d">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="j" class="derecha">
+                <img id="figura_1" class="imagen" src="./assets/Muñeco.svg" alt="">
+                <div class="indicador">
+                    <textarea id="msj_final" class="titulo">Ningún mensaje fue encontrado</textarea>
+                    <p id="info"></p>
+                    <p id="tag" class="tagline">Ingresa el texto que desees encriptar o desencriptar.</p> 
+                    <button id="boton_copiar" class="copiar">Copiar</button>   
+                </div>
+            </div>
+        </main>
+        <script src="./app.js"></script>
+    </body>
+</html>
